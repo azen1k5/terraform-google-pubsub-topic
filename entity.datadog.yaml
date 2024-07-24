@@ -1,0 +1,17 @@
+---
+apiVersion: v3
+kind: application
+metadata:
+  name: terraform-google-pubsub-topic
+spec:
+  components:
+    - service:terraform-google-pubsub-topic
+---
+apiVersion: v3
+kind: service
+metadata:
+  name: terraform-google-pubsub-topic
+  contacts:
+    - name: Slack
+      type: slack
+      contact: https://1komma5grad.slack.com/archives/C06DMD0F8DD
