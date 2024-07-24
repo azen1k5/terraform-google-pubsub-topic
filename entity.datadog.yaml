@@ -1,18 +1,27 @@
----
-apiVersion: v3
-kind: application
-metadata:
-  name: terraform-google-pubsub-topic
-  displayName: terraform-google-pubsub-topic
-spec:
-  components:
-    - service:terraform-google-pubsub-topic
----
-apiVersion: v3
-kind: service
-metadata:
-  name: terraform-google-pubsub-topic
-  contacts:
-    - name: Slack
-      type: slack
-      contact: https://1komma5grad.slack.com/archives/C06DMD0F8DD
+schema-version: v2.2
+dd-service: terraform-google-pubsub-topic
+team: dev-platform
+application: terraform-google-pubsub-topic
+tier: "1"
+type: web
+languages:
+  - java
+contacts:
+  - type: slack
+    contact: https://1komma5grad.slack.com/archives/C05U2D0Q077
+links:
+  - name: Notion
+    type: runbook
+    url: https://www.notion.so/1komma5workspace/Just-in-Time-JIT-Access-f448bdbe87e6454abe040ba2a504243d
+  - name: Source
+    type: repo
+    provider: github
+    url: https://github.com/1K5-TECH/jit-access
+  - name: Deployment
+    type: repo
+    provider: github
+    url: https://github.com/1K5-TECH/jit-access
+tags:
+  - access
+  - security
+  - iam
