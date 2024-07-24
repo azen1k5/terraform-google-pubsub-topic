@@ -3,6 +3,7 @@ apiVersion: v3
 kind: application
 metadata:
   name: terraform-google-pubsub-topic
+  displayName: terraform-google-pubsub-topic
 spec:
   components:
     - service:terraform-google-pubsub-topic
